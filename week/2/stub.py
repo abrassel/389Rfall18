@@ -27,7 +27,7 @@
 import socket
 
 host = "" # IP address here
-port = 0000 # Port here
+port = 20 # Port here
 wordlist = "/usr/share/wordlists/rockyou.txt" # Point to wordlist file
 
 def brute_force():
