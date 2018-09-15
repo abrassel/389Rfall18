@@ -1,4 +1,4 @@
-##Part 1
+## Part 1
 
 The first step I took to learning about kruegster1990 was going over to inteltechniques and doing a username search.
 I found several helpful resources.  He had posted a writeup in the UMDSEC twitsy page.  Aditionally, there was a reddit account corresponding the same handle (which was entirely empty), a tweet about cute dogs, and a link to his instagram page, as well as a link to twitter.
@@ -20,7 +20,7 @@ I took a look at the headers I received when I queried the web page, and I was a
 
 Finally, I decided to see what ports besides 80 were running on each of those IP addresses.  After running nmap, I was able to find several ports on 142.93.117.193, which had an EthernetIP-1, rxapi, waste, and something else that didn't look super helpful.  1942.93.118.186 only came up with ssh and html.  I took a look at the waste folder 1337 and was greeted with the login prompt. On to part 2.
 
-##Part 2
+## Part 2
 
 Unfortunately, I spent quite a while going down the wrong path here.  Before I had realized that there was an open port at 1337 I developed a script that opened several different python instances with different guesses for usernames and tried to brute force the ssh using the rock you database.  This ran for like 10 to 15 minutes before I realized that there was another port open.
 
