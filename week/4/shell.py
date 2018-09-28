@@ -79,7 +79,7 @@ def launch_shell():
 
 def start_interactive():
     usr_input = ['not quit'] #placeholder
-    valid_commands = frozenset(['shell','pull','help','quit'])
+    valid_commands = frozenset(['shell','pull','help','quit', 'secret'])
     while usr_input[0] != 'quit':
         usr_input = input("interactive> ").strip().split(' ')
 
@@ -101,9 +101,91 @@ def start_interactive():
         elif usr_input[0] == 'help':
             print(help_str)
 
+        elif usr_input[0] == 'secret':
+            for line in rick.split('\n'):
+                print(line)
+                sleep(.5)
+
         #quit works automatically
         
+rick = '''
 
+We're no strangers to love
+You know the rules and so do I
+A full commitment's what I'm thinking of
+You wouldn't get this from any other guy
+
+I just wanna tell you how I'm feeling
+Gotta make you understand
+
+Never gonna give you up
+Never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry
+Never gonna say goodbye
+Never gonna tell a lie and hurt you
+
+We've known each other for so long
+Your heart's been aching, but
+You're too shy to say it
+Inside, we both know what's been going on
+We know the game and we're gonna play it
+
+And if you ask me how I'm feeling
+Don't tell me you're too blind to see
+
+Never gonna give you up
+Never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry
+Never gonna say goodbye
+Never gonna tell a lie and hurt you
+
+Never gonna give you up
+Never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry
+Never gonna say goodbye
+Never gonna tell a lie and hurt you
+
+(Ooh, give you up)
+(Ooh, give you up)
+Never gonna give, never gonna give
+(Give you up)
+Never gonna give, never gonna give
+(Give you up)
+
+We've known each other for so long
+Your heart's been aching, but
+You're too shy to say it
+Inside, we both know what's been going on
+We know the game and we're gonna play it
+
+I just wanna tell you how I'm feeling
+Gotta make you understand
+
+Never gonna give you up
+Never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry
+Never gonna say goodbye
+Never gonna tell a lie and hurt you
+
+Never gonna give you up
+Never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry
+Never gonna say goodbye
+Never gonna tell a lie and hurt you
+
+Never gonna give you up
+Never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry
+Never gonna say goodbye
+Never gonna tell a lie and hurt you 
+'''
 
 if __name__ == '__main__':
     start_interactive()
+
