@@ -86,8 +86,12 @@ In the text (diffing against Wikipedia): CMSc389R-{PlaIN-dIfF_FLAG}
 
 
 
+Documentation Process
 
 
+I found the pcap information by following the 1st and 2nd tcp streams in wireshark.  You can view packet send and receive info to see where each individual is connecting from.  You can also get the update file from the google doc.
+
+For the second bit, refer to parser.py as the canonical code.  It's pretty standard, abstracts the reading process, reads in the header and then section by section.  I used the generated png image to find the first flag, and diffed against the wiki article to find the second.  
 
 The first GPS location resolves to the Consulate of Guatemala in Silver Spring
-The second is the parking lot across the street from the Varsity.
+The second is the parking lot across the street from the Varsity.  I couldn't figure out what to do from there because there didn't really seem to be any starting point from there on out.
