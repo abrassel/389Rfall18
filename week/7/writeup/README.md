@@ -11,7 +11,6 @@ Digital acknowledgement of honor pledge: Alexander Brassel
 ## Assignment 7 writeup
 
 ### Part 1 (40 pts)
-
 1. JPEG
 
 2. John Hancock Building, Chicago, Illinois
