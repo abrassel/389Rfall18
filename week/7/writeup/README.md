@@ -1,17 +1,5 @@
 Writeup 7 - Forensics I
 ======
-
-Name: Alexander Brassel
-Section: 0401
-
-I pledge on my honor that I have not given or received any unauthorized assistance on this assignment or examination.
-
-Digital acknowledgement of honor pledge: Alexander Brassel
-
-## Assignment 7 writeup
-
-### Part 1 (40 pts)
-
 1. JPEG
 
 2. John Hancock Building, Chicago, Illinois
@@ -36,3 +24,19 @@ My next step then was to run exif on it, same problem. exiftools, however, caugh
 I decided that that bad byte boundary could be an issue, and ran xxd to see what the file looked like.  I referenced the Wikipedia page for signatures for a jfif file (could see those bytes in xxd), and saw that the bytes almost matched, but were off by two.  I used tail -c +2 to shift over the file appropriately, and then file was able to recognize the image as a real image.  I changed the extension and opened it, saw the dinosaur and what was obviously steganography.
 
 I ran steghide extract on it and tried the following passwords in sequence: dinosaur, dinosuar, Dinosaur, Dinosuar, brontosaurus, stegosaurus.  Finally, I was able to get the key, and that concluded my foray into steganography.
+=======
+1. 
+
+2. 
+
+3. 
+
+4. 
+
+5. 
+
+6.
+
+### Part 2 (55 pts)
+
+*SUBMIT YOUR WRITEUP DETAILING YOUR APPROACH AND SOLUTION TO THIS PROBLEM HERE (>250 words). Dont forget to include the flag!*
