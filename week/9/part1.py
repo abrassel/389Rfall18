@@ -2,14 +2,19 @@
 #-*- coding:utf-8 -*-
 
 # importing a useful library -- feel free to add any others you find necessary
-import hashlib
+from hashlib import sha512
 import string
 
-# this will work if you place this script in your writeup folder
-wordlist = open("../probable-v2-top1575.txt", 'r')
-
+hashes = frozenset(open('hashes', 'r').read().split('\n'))
 # a string equal to 'abcdefghijklmnopqrstuvwxyz'.
 salts = string.ascii_lowercase
 
-for salt in salts:
-    # do stuff
+found = 0
+for word in open('probable-v2-top1575.txt', 'r'):
+    word = word.strip()
+    for salt in salts:
+        if sha512(salt + word).hexdigest() in hashes:
+            print 'Salt: %s\tPwd: %s' % (salt, word)
+            found += 1
+
+print 'Number of hashes: %s\tNumber found: %s' % (len(hashes) - 1, found)

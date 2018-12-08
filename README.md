@@ -97,7 +97,11 @@ Assignments may be submitted up to 3 days late for a 5%/day penalty.
 >>>>>>> 963ea49869176071a6988cf03e54bf8a5630a9f8
 =======
 | 7 (10/12) | [Forensics I](week/7/ForensicsI.pdf) | [Writeup 7](week/7) |
+<<<<<<< HEAD
 >>>>>>> 2ffe2d36725ef1af834b68d0937b997507751760
+=======
+>>>>>>> 93625984d854ba18dc5709163d10234e384415c1
+>>>>>>> 0cb9a9ff338b3843252fb6703249421f2035cf96
 | 9 (10/19) | Midterm | |
 | 10 (10/26) | [Forensics II](week/8/Forensics-II.pdf) | [Writeup 8](week/8) |
 | 10 (11/2) | [Cryptography I](week/9/Crypto-1.pdf) | [Writeup 9](week/9) |
